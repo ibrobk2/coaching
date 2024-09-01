@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.wrapper{
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  background: rgb(255, 252, 252);
+  padding: 50px 45px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 20px;
+}
+.title{
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 29px;
+  font-weight: bold;
+  color: #D97BA5;
+}
+.or{
+  margin: 40px;
+  font-size: 20px;
+  color: #312f2e;
+}
+
+.social_media{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.item{
+  margin: 0 5px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border: 2px solid #b999a7;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #b999a7;
+  transition: all 0.5s ease;
+}
+.item:hover{
+  border: 2px solid #b4507d;
+  color: #b4507d;
+}
+.forget{
+right: 100px;
+top: 10px;
+margin-left: 130px;
+left: 10px;
+font-size: 12px;
+color: #1d2120;
+}
+.newAccount{
+  padding-top: 15px;
+  margin-left: 110px;
+  font-size: 12px;
+  color: #1d2120;
+}
+
+.input_field{
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.input{
+  width: 100%;
+  padding: 12px;
+  padding-left: 30px;
+  border: none;
+  background: #eeeeee;
+}
+
+.input_field i{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 14px;
+  color: #1d2120;
+}
+
+.input_field samp i{
+  position: unset;
+  bottom: 12px;
+  right: 12px;
+  margin-bottom: 1px;
+  color: rgb(19, 156, 6);
+}
+
+.input_field samp{
+  position: absolute;
+  bottom: 12px;
+  right: 15px;
+  font-size: 12px;
+  color: rgb(254, 10, 10);
+}
+
+
+
+.btn{
+  width: 70%;
+  margin: 20px auto 0;
+  background: #D97BA5;
+  text-align: center;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.btn a{
+  color: #fff;
+}
+.btn:hover{
+  border: 2px solid #D97BA5;
+  color: #D97BA5;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #1d2120;
+}
+::-moz-placeholder { /* Firefox 19+ */
+ color: #1d2120;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #1d2120;
+}
