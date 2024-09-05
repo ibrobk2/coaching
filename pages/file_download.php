@@ -1,3 +1,11 @@
+
+<?php include 'include/header.php';?>
+
+<?php
+    if(!isset($_SESSION['id'])){
+        header("Location:login.php");
+    }
+?>
 <?php
 $conn = mysqli_connect("localhost", "root", "", "ideal_db");
 
@@ -38,7 +46,6 @@ $files = array_diff(scandir($directory), array('.', '..'));
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
 </head>
 <body>
-<?php include 'include/header.php';?>
     <div class="container mt-5">
         <h2 class="text-center">Materials Download Page</h2>
         <?php if (empty($files)) : ?>

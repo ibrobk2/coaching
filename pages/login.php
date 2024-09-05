@@ -2,7 +2,13 @@
 <?php include 'include/header.php';?>
 <?php
     if(isset($_SESSION['id'])){
-        header("Location:home.php");
+        if($_SESSION['id']=="Admin"){
+
+            header("Location: ../admin_dashboard/");
+        }else{
+
+            header("Location: ../user_dashboard/");
+        }
     }
 ?>
 

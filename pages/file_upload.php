@@ -1,7 +1,10 @@
+<?php include 'include/header.php';?>
+
 <?php
-       // include('navbar.php');
-        include 'include/header.php';
-    ?>
+    if(!isset($_SESSION['id'])){
+        header("Location:login.php");
+    }
+?>
 <?php
 $conn = mysqli_connect("localhost", "root", "", "ideal_db");
 
