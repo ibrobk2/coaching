@@ -692,10 +692,10 @@
                         </div>
                       </div>
                       <div class="col col-stats ms-3 ms-sm-0">
-                        <a href="add_activity">
+                        <a href="../pages/add_student.php">
                           <div class="numbers">
                             <p class="card-category">Add</p>
-                            <h4 class="card-title">Activity</h4>
+                            <h4 class="card-title">Student</h4>
                           </div>
                         </a>
                       </div>
@@ -715,9 +715,9 @@
                         </div>
                       </div>
                       <div class="col col-stats ms-3 ms-sm-0">
-                        <a href="activities_list"><div class="numbers">
-                          <p class="card-category">View</p>
-                          <h4 class="card-title">Activities</h4>
+                        <a href="../pages/action.php?status=manage"><div class="numbers">
+                          <p class="card-category">Manage</p>
+                          <h4 class="card-title">Students</h4>
                         </div></a>
                       </div>
                     </div>
@@ -736,9 +736,9 @@
                         </div>
                       </div>
                       <div class="col col-stats ms-3 ms-sm-0">
-                        <a href="user_reports"><div class="numbers">
-                          <p class="card-category">Generate</p>
-                          <h4 class="card-title">Reports</h4>
+                        <a href="../pages/teacher.php"><div class="numbers">
+                          <p class="card-category">Add</p>
+                          <h4 class="card-title">Teacher</h4>
                         </div></a>
                       </div>
                     </div>
