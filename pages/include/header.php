@@ -55,7 +55,7 @@
 			
 	</section>
     
-<?php if(isset($_SESSION['id'])) { ?>
+<?php if(isset($_SESSION['email'])) { ?>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <a class="navbar-brand" href="#"><img src="../assets/img/image/logo.jpeg" alt="" style="height: 50px; width: 60px;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,6 +64,7 @@
 
         <div class="collapse navbar-collapse ml-0" id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item "><a class="nav-link" href="../admin_dashboard/index.php">Admin Dashboard </a></li>
                 <li class="nav-item "><a class="nav-link" href="./home.php">Add Student </a></li>
                 <li class="nav-item "><a class="nav-link" href="action.php?status=manage">Manage Student </a></li>
                 <li class="nav-item "><a class="nav-link" href="./teacher.php">Add Teacher </a></li>

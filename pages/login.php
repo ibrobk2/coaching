@@ -1,15 +1,29 @@
 
 <?php include 'include/header.php';?>
 <?php
-    if(isset($_SESSION['id'])){
-        if($_SESSION['id']=="Admin"){
+$conn = mysqli_connect("localhost", "root", "", "ideal_db");
 
-            header("Location: ../admin_dashboard/");
-        }else{
+   if(isset($_POST['loginBtn'])){
+    $email = $_POST['email'];
+    $password = md5($_POST['password']);
 
-            header("Location: ../user_dashboard/");
+    $sql = "SELECT * FROM users WHERE email = '$email' AND password = '$password'";
+    if($queryResut = mysqli_query($conn,$sql)){
+        $data = mysqli_fetch_assoc($queryResut);
+        if($data){
+            session_start();
+            $_SESSION['email'] = $data['email'];
+            $_SESSION['name'] = $data['name'];
+            header("Location:home.php");
+        }
+        else{
+            return "Sorry .... email or password is invalid";
         }
     }
+    else{
+        die('Query Problem...'.mysqli_error($link));
+    }
+   }
 ?>
 
 
@@ -25,7 +39,7 @@
                         <h5 class="text-center text-danger py-2">
                             <?php echo isset($message) ? $message : '';  ?>
                         </h5>
-                         <form action="action.php" method="POST">
+                         <form action="login.php" method="POST">
                             <div class="form-group row">
                                 <label class="col-form-label col-md-4">Email</label>
                                 <div class="col-md-8">

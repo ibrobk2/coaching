@@ -32,7 +32,7 @@ class Auth extends Database{
             }
         }
         else{
-            die('Query Problem...'.mysqli_error($this->link));
+            die('Query Problem...');
         }
     }
 

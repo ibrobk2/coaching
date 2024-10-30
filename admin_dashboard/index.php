@@ -676,7 +676,7 @@
               </div>
               <div class="ms-md-auto py-2 py-md-0">
                 <a href="#" class="btn btn-label-info btn-round me-2">Manage Profile</a>
-                <a href="logout" class="btn btn-danger btn-round">Logout</a>
+                <a href="../pages/logout.php" class="btn btn-danger btn-round">Logout</a>
               </div>
             </div>
             <div class="row">
@@ -757,7 +757,7 @@
                         </div>
                       </div>
                       <div class="col col-stats ms-3 ms-sm-0">
-                        <a href="upload_file"><div class="numbers">
+                        <a href="../pages/file_upload.php"><div class="numbers">
                           <p class="card-category">Upload</p>
                           <h4 class="card-title">File</h4>
                         </div></a>

@@ -20,14 +20,14 @@
                                 <div class="col-6 py-3  px-5">
                                     <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Student</button>
                                 </div>
-                                <div class="col-6 py-3 px-5">
+                                <!-- <div class="col-6 py-3 px-5">
                                     <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Teacher</button>
-                                </div>
-                            </div>
-                            <div class="row py-3">
-                                <div class="col-6 py-3 px-5">
+                                </div> -->
+                           
+                           
+                                <!-- <div class="col-6 py-3 px-5">
                                     <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Perant</button>
-                                </div>
+                                </div> -->
                                 <div class="col-6 py-3 px-5">
                                     <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Admin</button>
                                 </div>
