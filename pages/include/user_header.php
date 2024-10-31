@@ -43,7 +43,7 @@
 							<a href="#"><i class="px-4"><img src="../assets/img/image/img/logo.jpg" style="height: 130px;width: 130px;border-radius: 50%;padding: 5px;"/></i></a>
 						</div>
 						<div class="col-md-6 text-center">
-							<h1  style="color: rgba(255, 255, 255, 0.973); font-size: 50px;">Online Student Coaching Class</h1>
+							<h1  style="color: rgba(255, 255, 255, 0.973); font-size: 50px;">Online Teaching Coaching Platform</h1>
 						</div>
 						<div class="col-md-4 text-center  text-white">					
 							<a href="#"><i class=""><img src="../assets/img/image/img/w.png" height="46"width="54" style="padding-left: 5px;"/></i></a>+2349068292949
@@ -64,11 +64,11 @@
 
         <div class="collapse navbar-collapse ml-0" id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                <li class="nav-item "><a class="nav-link" href="../admin_dashboard/index.php">Admin Dashboard </a></li>
-                <li class="nav-item "><a class="nav-link" href="../pages/add_student.php">Add Student </a></li>
-                <li class="nav-item "><a class="nav-link" href="action.php?status=manage">Manage Student </a></li>
-                <li class="nav-item "><a class="nav-link" href="./teacher.php">Add Teacher </a></li>
-                <li class="nav-item "><a class="nav-link" href="action.php?state=teacherManage">Manage Teacher </a></li>
+                <li class="nav-item "><a class="nav-link" href="../user_dashboard/index.php">Dashboard </a></li>
+                <li class="nav-item "><a class="nav-link" href="./file_download.php">Download File </a></li>
+                <!-- <li class="nav-item "><a class="nav-link" href="action.php?status=manage">Manage Student </a></li> -->
+                <!-- <li class="nav-item "><a class="nav-link" href="./teacher.php">Add Teacher </a></li> -->
+                <!-- <li class="nav-item "><a class="nav-link" href="action.php?state=teacherManage">Manage Teacher </a></li> -->
                 <li class="nav-item "><a class="nav-link" href="../pages/logout.php">Logout </a></li>
             </ul>
             <form class="form-inline ml-5 my-2 my-lg-0">

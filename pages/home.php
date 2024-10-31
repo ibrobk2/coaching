@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if($_SESSION['email']=="admin@gmail.com"){
+if($_SESSION['email']==="admin@gmail.com"){
     // echo "<script>alert('hello')</script>";
     header("Location: ../admin_dashboard/");   
 }else{

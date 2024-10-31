@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if(!isset($_SESSION['id'])){
+if(!isset($_SESSION['email'])){
   header("Location: ../pages/login.php");
 }
 
@@ -676,14 +676,14 @@ if(!isset($_SESSION['id'])){
               </div>
               <div class="ms-md-auto py-2 py-md-0">
                 <!-- <a href="#" class="btn btn-label-info btn-round me-2">Manage Profile</a> -->
-                <a href="../pages/action.php?status=logout" class="btn btn-danger btn-round">Logout</a>
+                <a href="../pages/logout.php" class="btn btn-danger btn-round">Logout</a>
               </div>
             </div>
             <div class="row">
               <div class="col-sm-6 col-md-3">
                 <div class="card card-stats card-round">
-                  <div class="card-body">
-                    <div class="row align-items-center">
+                  <!-- <div class="card-body"> -->
+                    <!-- <div class="row align-items-center">
                       <div class="col-icon">
                         <div
                           class="icon-big text-center icon-primary bubble-shadow-small"
@@ -699,8 +699,8 @@ if(!isset($_SESSION['id'])){
                           </div>
                         </a>
                       </div>
-                    </div>
-                  </div>
+                    </div> -->
+                  <!-- </div> -->
                 </div>
               </div>
               <div class="col-sm-6 col-md-3">
@@ -715,9 +715,9 @@ if(!isset($_SESSION['id'])){
                         </div>
                       </div>
                       <div class="col col-stats ms-3 ms-sm-0">
-                        <a href="activities_list"><div class="numbers">
+                        <a href="../pages/file_download.php"><div class="numbers">
                           <p class="card-category">View</p>
-                          <h4 class="card-title">Activities</h4>
+                          <h4 class="card-title">Files</h4>
                         </div></a>
                       </div>
                     </div>
@@ -737,8 +737,8 @@ if(!isset($_SESSION['id'])){
                       </div>
                       <div class="col col-stats ms-3 ms-sm-0">
                         <a href="user_reports"><div class="numbers">
-                          <p class="card-category">Generate</p>
-                          <h4 class="card-title">Reports</h4>
+                          <p class="card-category">Contact</p>
+                          <h4 class="card-title">Teachers</h4>
                         </div></a>
                       </div>
                     </div>
@@ -759,7 +759,7 @@ if(!isset($_SESSION['id'])){
                       <div class="col col-stats ms-3 ms-sm-0">
                         <a href="../pages/file_download.php"><div class="numbers">
                           <p class="card-category">Download</p>
-                          <h4 class="card-title">File</h4>
+                          <h4 class="card-title">Files</h4>
                         </div></a>
                       </div>
                     </div>
