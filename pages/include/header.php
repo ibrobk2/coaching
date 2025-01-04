@@ -67,6 +67,8 @@
                 <li class="nav-item "><a class="nav-link" href="../admin_dashboard/index.php">Admin Dashboard </a></li>
                 <li class="nav-item "><a class="nav-link" href="../pages/add_student.php">Add Student </a></li>
                 <li class="nav-item "><a class="nav-link" href="action.php?status=manage">Manage Student </a></li>
+                <li class="nav-item "><a class="nav-link" href="../pages/file_upload.php">File Upload </a></li>
+                <li class="nav-item "><a class="nav-link" href="../pages/manage_files.php">Manage Files </a></li>
                 <li class="nav-item "><a class="nav-link" href="./teacher.php">Add Teacher </a></li>
                 <li class="nav-item "><a class="nav-link" href="action.php?state=teacherManage">Manage Teacher </a></li>
                 <li class="nav-item "><a class="nav-link" href="../pages/logout.php">Logout </a></li>

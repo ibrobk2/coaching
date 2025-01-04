@@ -54,6 +54,7 @@ $files = array_diff(scandir($directory), array('.', '..'));
             <table id="fileTable" class="table table-striped table-bordered mt-4">
                 <thead>
                     <tr>
+                        <th>SNo.</th>
                         <th>File Name</th>
                         <th>Title</th>
                         <th>Level</th>
@@ -62,6 +63,7 @@ $files = array_diff(scandir($directory), array('.', '..'));
                 </thead>
                 <tbody>
                     <?php 
+                        $sn = 1;
                         $sql = "SELECT * FROM files";
                         $res = mysqli_query($conn, $sql);
 
@@ -72,9 +74,10 @@ $files = array_diff(scandir($directory), array('.', '..'));
 
 
                     
-                     foreach ($files as $file) : ?>
+                    //  foreach ($files as $file) : ?>
                         <tr>
-                            <td><?php echo htmlspecialchars($file); ?></td>
+                            <td><?=$sn++; ?></td>
+                            <td><?php echo htmlspecialchars($row['file_name']); ?></td>
                             <td><?=$row['title']; ?></td>
                             <td><?=$row['level']; ?></td>
                             <td>
@@ -87,7 +90,7 @@ $files = array_diff(scandir($directory), array('.', '..'));
                             </td>
                         </tr>
                     <?php 
-                    endforeach;  
+                    // endforeach;  
                         }
                             }
                         ?>

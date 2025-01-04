@@ -1,9 +1,9 @@
 <?php
 session_start();
 
-if(!isset($_SESSION['email'])){
-  header("Location: ../pages/login.php");
-}
+// if(!isset($_SESSION['user'])){
+//   header("Location: ../pages/login.php");
+// }
 
 ?>
 <!DOCTYPE html>
@@ -682,25 +682,25 @@ if(!isset($_SESSION['email'])){
             <div class="row">
               <div class="col-sm-6 col-md-3">
                 <div class="card card-stats card-round">
-                  <!-- <div class="card-body"> -->
-                    <!-- <div class="row align-items-center">
+                  <div class="card-body">
+                    <div class="row align-items-center">
                       <div class="col-icon">
                         <div
                           class="icon-big text-center icon-primary bubble-shadow-small"
                         >
-                          <i class="fas fa-plus"></i>
+                          <i class="fas fa-comment"></i>
                         </div>
                       </div>
                       <div class="col col-stats ms-3 ms-sm-0">
-                        <a href="add_activity">
+                        <a href="chat.php">
                           <div class="numbers">
-                            <p class="card-category">Add</p>
-                            <h4 class="card-title">Activity</h4>
+                            <p class="card-category">Start</p>
+                            <h4 class="card-title">Chat</h4>
                           </div>
                         </a>
                       </div>
-                    </div> -->
-                  <!-- </div> -->
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col-sm-6 col-md-3">
